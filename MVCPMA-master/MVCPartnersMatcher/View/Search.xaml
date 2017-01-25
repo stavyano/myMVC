@@ -1,0 +1,127 @@
+﻿<Window x:Class="MVCPartnersMatcher.View.Search"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MVCPartnersMatcher.View"
+        mc:Ignorable="d"
+        Title="Search" Height="300" Width="300">
+    <Grid VerticalAlignment="Top">
+
+        <ComboBox x:Name="types" Height="29" Width="82"  Margin="0,36,36,0" HorizontalAlignment="Right" VerticalAlignment="Top">
+        </ComboBox>
+        <ComboBox x:Name="loc" Height="29" Width="82" Margin="0,36,168,0" HorizontalAlignment="Right" VerticalAlignment="Top">
+        </ComboBox>
+        <Label x:Name="label" Content="תחום" HorizontalAlignment="Right" Height="26.478" Margin="0,10,35.946,0" VerticalAlignment="Top" Width="59.511"/>
+        <Label x:Name="label1" Content="מיקום" HorizontalAlignment="Left" Height="26" Margin="67,10,0,0" VerticalAlignment="Top" Width="78"/>
+        <Canvas x:Name="canvasHousing" Margin="0,-2,0,2" Visibility="Hidden">
+            <Label x:Name="label2" Content="טווח מחירים" HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="78" Canvas.Left="273" Canvas.Top="92"/>
+            <ComboBox x:Name="price" Canvas.Left="188" Canvas.Top="96" Width="69">
+                <ComboBoxItem Content="0-1000"/>
+                <ComboBoxItem Content="1000-2000"/>
+                <ComboBoxItem Content="2000-3000"/>
+                <ComboBoxItem Content="3000+"/>
+
+            </ComboBox>
+            <CheckBox x:Name="furniture" Content="ריהוט" Canvas.Left="235" Canvas.Top="198" />
+            <CheckBox x:Name="pet" Content="חיות" Canvas.Left="241" Canvas.Top="133" />
+            <CheckBox x:Name="smoke" Content="עישון" Canvas.Left="238" Canvas.Top="165" />
+            <CheckBox x:Name="veg" Content="צמחונות" Canvas.Left="221" Canvas.Top="229" />
+            <CheckBox x:Name="kosher" Content="כשרות" Canvas.Left="59" Canvas.Top="198" />
+            <CheckBox x:Name="clean" Content="ניקיון" Canvas.Left="68" Canvas.Top="165" />
+            <CheckBox x:Name="elevator" Content="מעלית" Canvas.Left="60" Canvas.Top="133" />
+            <DatePicker x:Name="date" Height="33" VerticalAlignment="Top" Grid.ColumnSpan="2" Canvas.Left="68" Canvas.Top="272"/>
+            <Label x:Name="label2_Copy" Content="מספר שותפים" HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="85" Margin="84,90,0,-37"/>
+            <ComboBox x:Name="roomates" Margin="10,94,271,-37">
+                <ComboBoxItem Content="2"/>
+                <ComboBoxItem Content="3"/>
+                <ComboBoxItem Content="4"/>
+            </ComboBox>
+            <Label x:Name="label2_Copy1" Content="תאריך כניסה רצוי" HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="106" Margin="180,273,0,-220"/>
+        </Canvas>
+
+        <Canvas x:Name="canvasDating" Visibility="Hidden">
+            <Label x:Name="label4" Content="מעוניין ב" HorizontalAlignment="Right" Width="56" Height="29" VerticalAlignment="Bottom" Grid.Column="1" Canvas.Left="288" Canvas.Top="104"/>
+            <Label x:Name="label7" Content="מספר פרטנרים" HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="90" RenderTransformOrigin="0.435,1.346" Canvas.Left="72" Canvas.Top="107"/>
+            <ComboBox x:Name="price8" Canvas.Left="31" Canvas.Top="111" Width="36">
+                <ComboBoxItem Content="2"/>
+                <ComboBoxItem Content="3"/>
+                <ComboBoxItem Content="4"/>
+            </ComboBox>
+            <ComboBox x:Name="gender" HorizontalAlignment="Left" Width="77" RenderTransformOrigin="0.509,1.308" Grid.ColumnSpan="2" Canvas.Left="197" Canvas.Top="111" />
+            <CheckBox x:Name="check11" Content="קשר ארוך" Canvas.Left="137" Canvas.Top="168" />
+            <CheckBox x:Name="check22" Content="דתי" Canvas.Left="60" Canvas.Top="168" Width="42" />
+            <CheckBox x:Name="check33" Content="עישון" Canvas.Left="242" Canvas.Top="165" />
+            <Label x:Name="label11" Content="גיל מבוקש התחלתי" HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="139" Canvas.Left="176" Canvas.Top="286"/>
+            <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="29" TextWrapping="Wrap" VerticalAlignment="Top" Width="94" Canvas.Left="68" Canvas.Top="286"/>
+            <Label x:Name="label12" Content="גיל מבוקש סופי" HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="139" Canvas.Left="197" Canvas.Top="323"/>
+            <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="29" TextWrapping="Wrap" VerticalAlignment="Top" Width="94" Canvas.Left="68" Canvas.Top="320"/>
+            <DatePicker x:Name="date1234" Height="33" VerticalAlignment="Top" Grid.ColumnSpan="2" Canvas.Left="140" Canvas.Top="197"/>
+            <Label x:Name="label12012344" Content=" שעה רצויה" HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="139" Canvas.Left="247" Canvas.Top="235"/>
+
+            <ComboBox x:Name="hour" Canvas.Left="140" Canvas.Top="235" Width="102" Height="26">
+                <ComboBoxItem Content="0700-0900"/>
+                <ComboBoxItem Content="0900-1100"/>
+                <ComboBoxItem Content="1100-1300"/>
+                <ComboBoxItem Content="1300-1500"/>
+                <ComboBoxItem Content="1500-1700"/>
+                <ComboBoxItem Content="1700-1900"/>
+                <ComboBoxItem Content="1900-2100"/>
+                <ComboBoxItem Content="2100-2300"/>
+                <ComboBoxItem Content="2300-0100"/>
+                <ComboBoxItem Content="0100-0300"/>
+                <ComboBoxItem Content="0300-0500"/>
+                <ComboBoxItem Content="0500-0700"/>
+            </ComboBox>
+            <Label x:Name="label1201234" Content="תאריך רצוי" HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="139" Canvas.Left="247" Canvas.Top="200"/>
+        </Canvas>
+
+        <Canvas x:Name="canvasSport" Visibility="Hidden">
+            <ComboBox x:Name="sport" HorizontalAlignment="Left" Width="77" RenderTransformOrigin="0.509,1.308" Grid.ColumnSpan="2" Canvas.Left="164" Canvas.Top="111" />
+            <Label x:Name="label44" Content="סוג ספורט" HorizontalAlignment="Right" Width="71" Height="29" VerticalAlignment="Bottom" Grid.Column="1" Canvas.Left="246" Canvas.Top="104"/>
+            <ComboBox x:Name="level" HorizontalAlignment="Left" Width="77" RenderTransformOrigin="0.509,1.308" Margin="161,152,0,-95" />
+            <Label x:Name="label44_Copy" Content="רמת קושי" HorizontalAlignment="Right" Width="71" Height="29" VerticalAlignment="Bottom" Canvas.Left="246" Canvas.Top="145"/>
+            <Label x:Name="label71" Content="מספר שחקנים" HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="90" RenderTransformOrigin="0.435,1.346" Canvas.Left="72" Canvas.Top="107"/>
+            <ComboBox x:Name="price82" Canvas.Left="31" Canvas.Top="111" Width="36">
+                <ComboBoxItem Content="2"/>
+                <ComboBoxItem Content="3"/>
+                <ComboBoxItem Content="4"/>
+                <ComboBoxItem Content="5"/>
+                <ComboBoxItem Content="6"/>
+                <ComboBoxItem Content="7"/>
+                <ComboBoxItem Content="8"/>
+                <ComboBoxItem Content="9"/>
+                <ComboBoxItem Content="10"/>
+            </ComboBox>
+
+        </Canvas>
+
+        <Canvas x:Name="canvasTravel" Visibility="Hidden">
+            <Label x:Name="label110" Content="מספר ימים" HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="139" Canvas.Left="192" Canvas.Top="192"/>
+            <DatePicker x:Name="date1" Height="33" VerticalAlignment="Top" Grid.ColumnSpan="2" Canvas.Left="43" Canvas.Top="103"/>
+            <Label x:Name="label120" Content="תאריך רצוי" HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="139" Canvas.Left="192" Canvas.Top="103"/>
+            <ComboBox x:Name="place" HorizontalAlignment="Left" Width="77" RenderTransformOrigin="0.509,1.308" Grid.ColumnSpan="2" Canvas.Left="15" Canvas.Top="157" />
+            <Label x:Name="label441" Content="אזור טיול" HorizontalAlignment="Right" Width="71" Height="29" VerticalAlignment="Bottom" Grid.Column="1" Canvas.Left="109" Canvas.Top="149"/>
+            <TextBox x:Name="textBox01" HorizontalAlignment="Left" Height="29" TextWrapping="Wrap" VerticalAlignment="Top" Width="94" Canvas.Left="51" Canvas.Top="192"/>
+            <ComboBox x:Name="travel" HorizontalAlignment="Left" Width="77" RenderTransformOrigin="0.509,1.308" Canvas.Left="180" Canvas.Top="156" />
+            <Label x:Name="label441_Copy" Content="סוג טיול" HorizontalAlignment="Right" Width="71" Height="29" VerticalAlignment="Bottom" Canvas.Left="283" Canvas.Top="149"/>
+            <CheckBox x:Name="check12" Content="דתי" Canvas.Left="269" Canvas.Top="277" Width="42" />
+            <Label x:Name="label111" Content="גיל מבוקש התחלתי" HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="139" Canvas.Left="125" Canvas.Top="270"/>
+            <TextBox x:Name="textBox11" HorizontalAlignment="Left" Height="29" TextWrapping="Wrap" VerticalAlignment="Top" Width="94" Canvas.Left="15" Canvas.Top="267"/>
+            <Label x:Name="label121" Content="גיל מבוקש סופי" HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="139" Canvas.Left="144" Canvas.Top="306"/>
+            <TextBox x:Name="textBox21" HorizontalAlignment="Left" Height="29" TextWrapping="Wrap" VerticalAlignment="Top" Width="94" Canvas.Left="15" Canvas.Top="301"/>
+            <Label x:Name="label21_Copy" Content="מספר מטיילים" HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="85" Canvas.Left="146" Canvas.Top="236"/>
+            <ComboBox x:Name="price1_Copy" RenderTransformOrigin="4.071,6.682" Canvas.Left="97" Canvas.Top="240">
+                <ComboBoxItem Content="2"/>
+                <ComboBoxItem Content="3"/>
+                <ComboBoxItem Content="4"/>
+            </ComboBox>
+        </Canvas>
+        
+        <Button x:Name="button" Content="חפש" Height="37" VerticalAlignment="Bottom" Margin="129,0,132,-319" Click="button_Click"  Visibility="Hidden"/>
+        <Button x:Name="button1" Content="חפש" Height="37" VerticalAlignment="Bottom" Margin="116,0,118,-40" Click="button1_Click"/>
+
+
+    </Grid>
+
+</Window>

@@ -1,0 +1,17 @@
+﻿<Window x:Class="MVCPartnersMatcher.View.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MVCPartnersMatcher.View"
+        mc:Ignorable="d"
+        Title="Login" Height="300" Width="300">
+    <Grid Margin="0,0,2,1">
+        <Label x:Name="label" Content="כתובת מייל" HorizontalAlignment="Right" Height="28.877" Margin="0,37.974,10,0" VerticalAlignment="Top" Width="72.631"/>
+        <TextBox x:Name="textBox" Height="28.877" Margin="22.471,37.974,94.663,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Label x:Name="label1" Content="סיסמא" HorizontalAlignment="Right" Height="24.065" Margin="0,109.363,19.251,0" VerticalAlignment="Top" Width="52.14"/>
+        <PasswordBox x:Name="passwordBox" Height="33.691" Margin="22.471,99.737,94.663,0" VerticalAlignment="Top"/>
+        <Button x:Name="button" Content="התחברות" Height="32.888" Margin="54.556,0,94.663,26.522" VerticalAlignment="Bottom" Click="button_Click"/>
+
+    </Grid>
+</Window>

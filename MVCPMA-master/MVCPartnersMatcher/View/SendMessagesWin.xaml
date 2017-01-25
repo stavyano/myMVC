@@ -1,0 +1,19 @@
+﻿<Window x:Class="MVCPartnersMatcher.View.SendMessagesWin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MVCPartnersMatcher.View"
+        mc:Ignorable="d"
+        Title="SendMessagesWin" Height="500" Width="350">
+    <Grid>
+        <Label x:Name="partnerShipToChoose" Content="בחר קבוצה אליה תרצה לשלוח" Height="25" VerticalAlignment="Top" Canvas.Left="304" Canvas.Top="114" Visibility="Visible" Margin="138,10,27,0"/>
+        <Label x:Name="UserChoosing" Content="בחר אנשים אליהם תרצה לשלוח" Height="25" VerticalAlignment="Top" Canvas.Left="304" Canvas.Top="114" Visibility="Visible" Margin="131,110,27,0"/>
+        <Label x:Name="ContentOfMessages" Content="תוכן הודעה" Height="25" VerticalAlignment="Top" Canvas.Left="304" Canvas.Top="114" Visibility="Visible" Margin="226,239,34,0"/>
+        <TextBox x:Name="content" Height="75" Margin="10,269,27,0" TextWrapping="Wrap" VerticalAlignment="Top" Visibility="Visible"/>
+        <ListBox x:Name="ListPartnerShipToChoose" Canvas.Left="329" Canvas.Top="144" Visibility="Visible" SelectionMode="Single" Margin="95,35,34,364" SelectionChanged="ListPartnerShipToChoose_SelectionChanged"/>
+        <Button  x:Name="send" Content="שלח הודעה" Click="send_Click" Height="24" VerticalAlignment="Top" Visibility="Visible" Canvas.Left="191" Canvas.Top="77" Margin="20,366,27,0"/>
+        <ListBox x:Name="UsersInGroup" Canvas.Left="329" Canvas.Top="144" Visibility="Visible" SelectionMode="Multiple" Margin="95,140,34,230"/>
+
+    </Grid>
+</Window>

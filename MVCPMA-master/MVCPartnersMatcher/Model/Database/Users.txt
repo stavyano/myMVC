@@ -1,0 +1,7 @@
+﻿adarvit@gmail.com|123456|adar|vit|3/11/1991|זכר|0545442654
+noga.agmon1@gmail.com|123456|noga|agmon|1/1/1981|נקבה|0000000000
+tal14014@gmail.com|123456|tal|shkolnik|2/10/1990|נקבה|0123445678
+stav@yanovsky.net|123456|stav|yanovsky|10/2/1991|נקבה|0544204320
+shir20326@walla.com|123456|shir|azulay|06/07/1991|נקבה|0253652121
+royygael@gmail.com|123123|roy|ygael|07/01/1991|זכר|0525525525
+moranazran@gmail.com|123456|adar|asd|10/06/1969|זכר|0987654321
